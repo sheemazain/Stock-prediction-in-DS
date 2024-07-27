@@ -1,0 +1,96 @@
+/kaggle/input/stoke-prediction-dataset/train.csv
+/kaggle/input/stoke-prediction-dataset/test.csv
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 1137 entries, 0 to 1136
+Data columns (total 12 columns):
+ #   Column             Non-Null Count  Dtype  
+---  ------             --------------  -----  
+ 0   id                 1137 non-null   int64  
+ 1   gender             1137 non-null   object 
+ 2   age                1137 non-null   object 
+ 3   hypertension       1137 non-null   int64  
+ 4   heart_disease      1137 non-null   int64  
+ 5   ever_married       1137 non-null   object 
+ 6   work_type          1137 non-null   object 
+ 7   Residence_type     1137 non-null   object 
+ 8   avg_glucose_level  1137 non-null   float64
+ 9   bmi                1085 non-null   float64
+ 10  smoking_status     1137 non-null   object 
+ 11  stroke             1137 non-null   int64  
+dtypes: float64(2), int64(4), object(6)
+memory usage: 106.7+ KB
+Index(['id', 'gender', 'age', 'hypertension', 'heart_disease', 'ever_married',
+       'work_type', 'Residence_type', 'avg_glucose_level', 'bmi',
+       'smoking_status', 'stroke'],
+      dtype='object')
+id                    0
+gender                0
+age                   0
+hypertension          0
+heart_disease         0
+ever_married          0
+work_type             0
+Residence_type        0
+avg_glucose_level     0
+bmi                  52
+smoking_status        0
+stroke                0
+dtype: int64
+(1137, 10)
+(1137,)
+(932, 10)
+gender ['Female' 'Male' 'Other']
+age ['31' '13' '18' '65' '4' '28' '64' '62' '26' '63' '50' '77' '1' '52' '24'
+ '48' '45' '74' '3' '17' '54' '55' '67' '35' '38' '81' '34' '44' '79' '56'
+ '70' '30' '39' '29' '80' '59' '51' '19' '43' '71' '0' '23' '53' '78' '66'
+ '60' '76' '22' '6' '47' '2' '46' '11' '33' '37' '49' '61' '75' '40' '8'
+ '57' '12' '21' '41' '58' '27' '20' '68' '42' '5' '69' '9' '36' '25' '82'
+ '73' '32' '7' '16' '14' '72' '15' '10' '*82']
+ever_married ['No' 'Yes']
+work_type ['Govt_job' 'children' 'Private' 'Self-employed' 'Never_worked']
+Residence_type ['Rural' 'Urban']
+smoking_status ['never smoked' 'Unknown' 'formerly smoked' 'smokes']
+gender ['Female' 'Male']
+ever_married ['Yes' 'No']
+work_type ['Private' 'Self-employed' 'children' 'Govt_job' 'Never_worked']
+Residence_type ['Urban' 'Rural']
+smoking_status ['formerly smoked' 'never smoked' 'Unknown' 'smokes']
+<class 'pandas.core.frame.DataFrame'>
+Index: 1136 entries, 0 to 1136
+Data columns (total 10 columns):
+ #   Column             Non-Null Count  Dtype  
+---  ------             --------------  -----  
+ 0   gender             1136 non-null   object 
+ 1   age                1136 non-null   object 
+ 2   hypertension       1136 non-null   int64  
+ 3   heart_disease      1136 non-null   int64  
+ 4   ever_married       1136 non-null   object 
+ 5   work_type          1136 non-null   object 
+ 6   Residence_type     1136 non-null   object 
+ 7   avg_glucose_level  1136 non-null   float64
+ 8   bmi                1084 non-null   float64
+ 9   smoking_status     1136 non-null   object 
+dtypes: float64(2), int64(2), object(6)
+memory usage: 97.6+ KB
+(1136,)
+<class 'pandas.core.frame.DataFrame'>
+Index: 1136 entries, 0 to 1136
+Data columns (total 10 columns):
+ #   Column             Non-Null Count  Dtype  
+---  ------             --------------  -----  
+ 0   gender             1136 non-null   object 
+ 1   age                1136 non-null   int64  
+ 2   hypertension       1136 non-null   int64  
+ 3   heart_disease      1136 non-null   int64  
+ 4   ever_married       1136 non-null   object 
+ 5   work_type          1136 non-null   object 
+ 6   Residence_type     1136 non-null   object 
+ 7   avg_glucose_level  1136 non-null   float64
+ 8   bmi                1084 non-null   float64
+ 9   smoking_status     1136 non-null   object 
+dtypes: float64(2), int64(3), object(5)
+memory usage: 97.6+ KB
+accuracy 0.8709677419354839
+roc_auc 0.8340220385674931
+accuracy 0.8475073313782991
+roc_auc 0.8103764921946739
